@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <zip destfile="/Users/pivotal/workspace/cf-mbp-java-python-dependencies/target/python-mbp-demo-0.0.1-SNAPSHOT.jar" compress="false" update="yes">
+    <zipfileset includes="multi-buildpack.yml" dir="."/>
+    <zipfileset includes="requirements.txt" dir="."/>
+  </zip>
+</target>
+</project>
